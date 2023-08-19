@@ -39,3 +39,27 @@ Models are trained and evaluated using both the original and augmented datasets.
 
 ## Comparison
 The comparison between models trained on original and augmented data is presented in a DataFrame. The DataFrame provides a side-by-side view of the training and testing scores of each model. This enables an easy comparison of model performance under different conditions.
+
+### Original Data
+
+| Model              | Train Score | Test Score | MAE      |
+|--------------------|-------------|------------|----------|
+| Random Forest      | 0.983136    | 0.900052   | 1.782004 |
+| Decision Tree      | 0.948539    | 0.860861   | 2.230840 |
+| Gradient Boosting  | 0.974110    | 0.893638   | 1.908018 |
+| Linear Regression  | 0.852843    | 0.837234   | 2.313014 |
+| Ridge Regression   | 0.848751    | 0.852070   | 2.321405 |
+| Lasso Regression   | 0.807917    | 0.827548   | 2.580218 |
+| Stacking Regressor | 0.965137    | 0.896407   | 1.794147 |
+
+### Augmented Data
+
+| Model              | Train Score | Test Score | MAE      |
+|--------------------|-------------|------------|----------|
+| Random Forest      | 0.994433    | 0.921049   | 1.292312 |
+| Decision Tree      | 1.000000    | 0.858823   | 1.071250 |
+| Gradient Boosting  | 0.999912    | 0.937564   | 0.931371 |
+| Linear Regression  | 0.856113    | 0.835599   | 2.454077 |
+| Ridge Regression   | 0.854985    | 0.834194   | 2.458263 |
+| Lasso Regression   | 0.817825    | 0.795067   | 2.792019 |
+| Stacking Regressor | 0.998858    | 0.930702   | 1.045923 |
