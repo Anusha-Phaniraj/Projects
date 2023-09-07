@@ -1,9 +1,9 @@
 # Variational Autoencoder (VAE) for MNIST Image Generation
 
-This code demonstrates how to create a Variational Autoencoder (VAE) using PyTorch to generate images from the MNIST dataset.
+This code demonstrates how to create a simple Variational Autoencoder (VAE) using PyTorch to generate images from the MNIST dataset.
 
 ### Data Loading
-We download and prepare the MNIST dataset for training and testing. The images are transformed into tensors for processing.
+Download and prepare the MNIST dataset for training and testing. The images are transformed into tensors for processing.
 
 ### Model Architecture
 The VAE has two main parts:
@@ -30,16 +30,16 @@ The VAE has two main parts:
 ### Loss Function
 The loss function has two components:
 
-#### Reconstruction Loss
-- Measures how well the generated image matches the input image.
-- Calculated using binary cross-entropy.
-
-#### KL Divergence
-- Encourages the latent space to have a standard normal distribution.
-- Analytically computed.
+  #### Reconstruction Loss
+  - Measures how well the generated image matches the input image.
+  - Calculated using binary cross-entropy.
+  
+  #### KL Divergence
+  - Encourages the latent space to have a standard normal distribution.
+  - Analytically computed.
 
 ### Optimizer
-- We use the Adam optimizer to update model parameters during training.
+- Adam optimizer is used to update model parameters during training.
 
 ### Training Loop
 - The VAE is trained for the specified number of epochs.
@@ -49,7 +49,7 @@ The loss function has two components:
 
 ### Testing Loop
 - After training, the model is set to evaluation mode.
-- We evaluate the model on a test dataset to measure its reconstruction accuracy.
+- Evaluate the model on a test dataset to measure its reconstruction accuracy.
 
 ### Generating Images
 - Using the trained VAE, we generate new images by sampling random latent vectors.
